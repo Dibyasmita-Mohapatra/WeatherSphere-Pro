@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherSphere Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="background"></div>
+
+<!-- ================= MAIN CONTAINER ================= -->
+
+<main class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <h1>
+            <i class="fa-solid fa-cloud-sun"></i>
+            WeatherSphere Pro
+        </h1>
+
+        <p>
+            Live Weather Dashboard
+        </p>
+
+    </header>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search city..."
+                    autocomplete="off">
+
+            <button id="searchBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RECENT SEARCHES ================= -->
+
+    <section>
+
+        <div
+                id="recent"
+                class="recent-searches">
+
+        </div>
+
+    </section>
+
+    <!-- ================= LOADING ================= -->
+
+    <section>
+
+        <div
+                id="loading"
+                class="loading hidden">
+
+            <div class="spinner"></div>
+
+            <p>Fetching Weather...</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ERROR ================= -->
+
+    <section>
+
+        <div
+                id="error"
+                class="error hidden">
+
+        </div>
+
+    </section>
+
+    <!-- ================= WEATHER CARD ================= -->
+
+    <section>
+
+        <div
+                id="weatherCard"
+                class="weather-card hidden">
+
+            <div class="card-top">
+
+                <div>
+
+                    <h2 id="cityName">City</h2>
+
+                    <p id="description">
+                        Weather Description
+                    </p>
+
+                </div>
+
+                <img
+                        id="weatherIcon"
+                        src=""
+                        alt="Weather Icon">
+
+            </div>
+
+            <div
+                    id="temp"
+                    class="temperature">
+
+                0°C
+
+            </div>
+
+            <div class="weather-info">
+
+                <div class="info-box">
+
+                    <i class="fa-solid fa-droplet"></i>
+
+                    <div>
+
+                        <span>Humidity</span>
+
+                        <strong id="humidity">
+
+                            0%
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="info-box">
+
+                    <i class="fa-solid fa-wind"></i>
+
+                    <div>
+
+                        <span>Wind</span>
+
+                        <strong id="wind">
+
+                            0 km/h
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- EXTRA WEATHER DETAILS -->
+
+        <div class="extra-info">
+
+            <div class="extra-card">
+                <span>🌡️ Feels Like</span>
+                <strong id="feelsLike">--</strong>
+            </div>
+
+            <div class="extra-card">
+                <span>🌅 Sunrise</span>
+                <strong id="sunrise">--</strong>
+            </div>
+
+            <div class="extra-card">
+                <span>🌇 Sunset</span>
+                <strong id="sunset">--</strong>
+            </div>
+
+            <div class="extra-card">
+                <span>📊 Pressure</span>
+                <strong id="pressure">--</strong>
+            </div>
+
+            <div class="extra-card">
+                <span>👀 Visibility</span>
+                <strong id="visibility">--</strong>
+            </div>
+
+            <div class="extra-card">
+                <span>🌍 Country</span>
+                <strong id="country">--</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FORECAST ================= -->
+
+    <section>
+
+        <h2 class="forecast-title">
+
+            5-Day Forecast
+
+        </h2>
+
+        <div
+                id="forecast"
+                class="forecast-grid">
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
