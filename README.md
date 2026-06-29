@@ -16,10 +16,10 @@
 
 ## 🚀 Live Demo
 
-**Live Website:** *(Add your deployed link after hosting on Netlify or Vercel)*
+**Live Website:**
 
 ```
-https://your-project-name.netlify.app
+https://weather-sphere-pro.vercel.app/
 ```
 
 ---
